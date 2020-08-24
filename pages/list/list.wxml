@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="topSelect">
+    <view class="inputBox">
+      <icon class="icon-small" type="search" size="16"></icon>
+      <input class="weui-input" auto-focus placeholder="请输入商品名称"/>
+    </view>
+    <view class="closeBtn">取消</view>
+  </view>
+  <view class="productListBox">
+    <view class="productListCont" wx:for="{{productData}}">
+      <cover-view class="productImg">
+        <cover-image src="{{item.imgUrl}}"></cover-image>
+      </cover-view>
+      <view class="productMessage">
+        <view>{{item.name}}</view>
+        <view>{{item.intro}}</view>
+        <view>￥{{item.price}}  <text class="discountsPrice">￥{{item.discountsPrice}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

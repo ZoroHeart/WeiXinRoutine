@@ -1,0 +1,89 @@
+//index.js
+//获取应用实例
+const app = getApp()
+
+Page({
+  data: {
+    region:  '广州市',
+    bgImg:["../../images/phbanner0.png","../../images/phbanner1.png","../../images/phbanner2.png","../../images/phbanner3.png"],
+    productData:[
+      {
+        imgUrl:"../../images/grouplist0.jpg",
+        name:"红心火龙果",
+        intro:"海南红心火龙果一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist1.jpg",
+        name:"水晶红富士",
+        intro:"陕西水晶红富士一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist2.jpg",
+        name:"伦晚",
+        intro:"秭归伦晚脐橙一箱",
+        price:58.5,
+        discountsPrice:72.8
+      },
+      {
+        imgUrl:"../../images/grouplist3.jpg",
+        name:"汤山杨梅",
+        intro:"汤山杨梅一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist4.jpg",
+        name:"妃子笑荔枝",
+        intro:"海南妃子笑荔枝一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist5.jpg",
+        name:"柠檬",
+        intro:"柠檬一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist6.jpg",
+        name:"蓝莓",
+        intro:"蓝莓一箱",
+        price:92.5,
+        discountsPrice:125.8
+      },
+      {
+        imgUrl:"../../images/grouplist7.jpg",
+        name:"水蜜桃",
+        intro:"水蜜桃一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist8.jpg",
+        name:"木瓜",
+        intro:"木瓜一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+      {
+        imgUrl:"../../images/grouplist9.jpg",
+        name:"库尔勒香梨",
+        intro:"库尔勒香梨一箱",
+        price:32.5,
+        discountsPrice:45.8
+      },
+    ]
+  },
+  bindRegionChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      region: e.detail.value[1]
+    })
+  }
+  
+})

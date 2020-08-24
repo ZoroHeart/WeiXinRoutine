@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="container">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取信息 </button>
+  <view class="userinfo" wx:else>
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </block>
+    <view>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      <view class="userMember">
+        <cover-image src="../../images/iconVIP.png"></cover-image>
+        <text>  会员等级{{userMember}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="userMessage">
+    <view class="balance">
+      <view>余额</view>
+      <view>￥{{balance}}</view>
+    </view>
+    <view class="integral">
+      <view>积分</view>
+      <view>{{integral}}</view>
+    </view>
+    <view class="coupon">
+      <view>优惠券</view>
+      <view>{{coupon}}张</view>
+    </view>
+  </view>
+
+  <view class="myorder">
+    <view class="orderTitle">
+      <view><cover-image src="../../images/icon42@2x.png"></cover-image>我的订单</view>
+      <view>全部订单</view>
+    </view>
+    <view class="orderList">
+      <view>
+        <cover-image src="../../images/icon-w1@2x.png"></cover-image>
+        <text>待付款</text>
+      </view>
+      <view>
+        <cover-image src="../../images/icon-w4@2x.png"></cover-image>
+        <text>待发货</text>
+      </view>
+      <view>
+        <cover-image src="../../images/icon-w7@2x.png"></cover-image>
+        <text>待收货</text>
+      </view>
+      <view>
+        <cover-image src="../../images/icon-w8@2x.png"></cover-image>
+        <text>待评价</text>
+      </view>
+      <view>
+        <cover-image src="../../images/icon-w2@2x.png"></cover-image>
+        <text>退款</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="myListBox">
+    <view>
+      <cover-image src="../../images/icon-w11@2x.png"></cover-image>
+      <view>我的团购</view>
+    </view>
+    <view>
+      <cover-image src="../../images/icon-w10@2x.png"></cover-image>
+      <view>我的抽奖</view>
+    </view>
+    <view>
+      <cover-image src="../../images/icon-w9@2x.png"></cover-image>
+      <view>我的秒杀</view>
+    </view>
+    <view>
+      <cover-image src="../../images/icon-w3@2x.png"></cover-image>
+      <view>商品收藏</view>
+    </view>
+    <view>
+      <cover-image src="../../images/iconkefu@2x.png"></cover-image>
+      <view>客服中心</view>
+    </view>
+    <view>
+      <cover-image src="../../images/icon-w13@2x.png"></cover-image>
+      <view>设置</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,95 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">
+    <view class="citySelect">
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region}}
+        </view>
+      </picker>
+    </view>
+    <view class="searchText">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" auto-focus placeholder="请输入商品名称"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bannerBox">
+    <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+      <block wx:for="{{bgImg}}" wx:key="*this">
+        <swiper-item>
+          <cover-view>
+            <cover-image src="{{item}}"></cover-image>
+          </cover-view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="daohangBox">
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b1.png"></cover-image>
+        <view>每日签到</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b2.png"></cover-image>
+        <view>充值有礼</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b3.png"></cover-image>
+        <view>限时秒杀</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b4.png"></cover-image>
+        <view>团购推荐</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b5.png"></cover-image>
+        <view>新品上市</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b6.png"></cover-image>
+        <view>我要兑换</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b7.png"></cover-image>
+        <view>幸运抽奖</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator class="daohangBtn" url="" hover-class="navigator-hover">
+        <cover-image src="../../images/icon-b8.png"></cover-image>
+        <view>我的订单</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="productListBox">
+    <navigator url="/pages/productDetail/productDetail" hover-class="navigator-hover">
+      <view class="productListCont" wx:for="{{productData}}">
+        <cover-view class="productImg">
+          <cover-image src="{{item.imgUrl}}"></cover-image>
+        </cover-view>
+        <view class="productMessage">
+          <view>{{item.name}}</view>
+          <view>{{item.intro}}</view>
+          <view>￥{{item.price}}  <text class="discountsPrice">￥{{item.discountsPrice}}</text></view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

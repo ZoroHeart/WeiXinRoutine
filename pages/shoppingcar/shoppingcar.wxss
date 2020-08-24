@@ -1,0 +1,105 @@
+.title{
+  width: 100%;
+  padding-bottom:0.6rem;
+  position: absolute;
+  top: 0;
+  padding:0.3rem 0;
+  border-bottom: 1px solid #ebedf0;
+}
+.titleHead{
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+.carUpdete{
+  position: absolute;
+  right: 2%;
+  top: 0.3rem;
+  color: #07c160;
+  font-size: 0.9rem;
+}
+.shoppingCarList{
+  margin-top: 10%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.labelss{
+  position: relative;
+  border-bottom: 1px solid #ebedf0;
+  margin:2% 0;
+}
+.labelss>label{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.labelss>label>checkbox{
+  width: 25px;
+  height: 25px;
+}
+.productImg{
+  width: 30%;
+}
+.productCont{
+  width: 59%;
+}
+.productName{
+  position: absolute;
+  top: 0;
+}
+.productPrice{
+  position: absolute;
+  bottom: 5%;
+  color: crimson;
+  font-size: 1.3rem;
+}
+.productNum{
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  right: 5%;
+  bottom: 5%;
+}
+.productNum>view{
+  text-align: center;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f3f5;
+  margin-right: 2%;
+}
+.productNum>view:first-of-type{
+  width: 1.6rem;
+  height: 1.6rem;
+  border:1px solid #ebedf0;
+}
+.productNum>view:last-of-type{
+  width: 1.6rem;
+  height: 1.6rem;
+  border:1px solid #ebedf0;
+}
+
+.bottomNums{
+  width: 100%;
+  padding: 1.5% 0;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.finalBtn{
+  width: 25%;
+  text-align: center;
+  padding: 6px 0;
+  background: linear-gradient(to right,#ff6034,#ee0a24);
+  border-radius:15px;
+  color: #fff;
+}
+

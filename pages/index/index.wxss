@@ -1,0 +1,103 @@
+/**index.wxss**/
+.container{
+  background: #f2f2f2;
+  justify-content:start
+}
+.title{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  padding-bottom: 0.5rem;
+}
+.picker{
+  color: #07c160;
+}
+.citySelect{
+  font-size: 0.9rem;
+}
+.searchText{
+  font-size: 0.95rem;
+  width:70%;
+}
+.weui-input{
+  background: #f2f2f2;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+.bannerBox{
+  width: 100%;
+  height: 10.5rem;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.daohangBox{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  margin-top: 0.4rem;
+}
+.daohangBox>view{
+  width: 24%;
+  height:5rem;
+}
+.daohangBtn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.daohangBtn>cover-image{
+  width: 50%;
+  margin-top: 0.5rem;
+}
+.daohangBtn>view{
+  font-size: 0.9rem;
+}
+
+.productListBox{
+  width: 100%;
+  background: #f2f2f2;
+}
+.productListCont{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background: #fff;
+  margin-top: 0.7rem;
+}
+.productImg{
+  width: 30%;
+}
+.productMessage{
+  width: 65%;
+  position: relative;
+}
+.productMessage>view{
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+.productMessage>view:nth-of-type(2){
+  color: #969799;
+}
+.productMessage>view:nth-of-type(3){
+  position: absolute;
+  bottom: 5%;
+  font-size: 1.1rem;
+}
+.discountsPrice{
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: #969799;
+}
+

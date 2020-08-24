@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="title">
+    <view class="titleHead">购物车</view>
+    <view class="carUpdete">编辑</view>
+  </view>
+  <view class="shoppingCarList">
+    <checkbox-group class="group" bindchange="checkboxChange">
+      <view class="labelss" wx:for="{{checkboxItems}}">
+        <label>
+          <checkbox value="{{item.id}}" checked="{{item.checked}}"></checkbox>
+          <cover-view class="productImg">
+            <cover-image src="{{item.imgUrl}}"></cover-image>
+          </cover-view>
+          <view class="productCont">
+            <view class="productName">{{item.name}}{{item.intro}}</view>
+            <view class="productPrice">￥{{item.price}}</view>
+            <view class="productNum">
+              <view>+</view>
+              <view>0</view>
+              <view>-</view>
+            </view>
+          </view>
+        </label>
+      </view>
+    </checkbox-group>
+  </view>
+
+  <view class="bottomNums">
+    <view class="bottomSelect">
+      <label>
+        <checkbox value="" checked=""></checkbox>全选
+      </label>
+    </view>
+    <view class="totalNum">合计：￥{{totalNum}}</view>
+    <view class="finalBtn">结算</view>
+  </view>
+</view>
